@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>PEDIDOS DE COMPRAS</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h2>PEDIDOS DE COMPRAS</h2>
+        </div>
+        <p>ADICIONE UM NOVO PEDIDO</p>
+        <section class="newItem">
+            <div class="fields">
+                <input type="text" class="newItemField" id="newId" placeholder="PEDIDO">
+                <input type="text" class="newItemField" id="newMaterial" placeholder="NOME MATERIAL">
+                <input type="text" class="newItemField" id="newValor" placeholder="VALOR">
+                <input type="text" class="newItemField" id="newQuantidade" placeholder="QUANTIDADE">
+                <input type="text" class="newItemField" id="newFornecedor" placeholder="NOME FORNECEDOR">
+    
+                <span onclick="newItem()" class="addBtn">ADICIONAR</span>
+            </div>
+        </section>
+    </header>
+<div class="box"> 
+    <section class="items">
+        <table id="myTable">
+            <thead id="myTableHeader">
+                <tr>
+                    <th>PEDIDO</th>
+                    <th>MATERIAL</th>
+                    <th>VALOR</th>
+                    <th>QUANTIDADE</th>
+                    <th>FORNECEDOR</th>
+                    <th>DELETAR</th>
+                </tr>
+            </thead>
+            <tbody id="myTableBody">
+            </tbody>
+        </table>
+    </section>
+</div>      
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
